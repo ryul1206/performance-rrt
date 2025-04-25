@@ -1,0 +1,297 @@
+         20636979 function calls (20628057 primitive calls) in 9.734 seconds
+
+   Ordered by: internal time
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+   388654    2.199    0.000    8.920    0.000 D:\git\performance-rrt\core\python_impl\rrt_star_numpy_opt.py:41(segments_intersect)
+   388620    1.692    0.000    4.131    0.000 D:\git\performance-rrt\.venv\Lib\site-packages\numpy\linalg\_linalg.py:320(solve)
+   388654    0.999    0.000    2.156    0.000 D:\git\performance-rrt\.venv\Lib\site-packages\numpy\linalg\_linalg.py:2331(det)
+   777274    0.719    0.000    1.488    0.000 D:\git\performance-rrt\.venv\Lib\site-packages\numpy\linalg\_linalg.py:148(_commonType)
+  2000492    0.313    0.000    0.466    0.000 D:\git\performance-rrt\.venv\Lib\site-packages\numpy\linalg\_linalg.py:128(isComplexType)
+  1165963    0.300    0.000    0.300    0.000 {built-in method numpy.zeros}
+   388654    0.298    0.000    0.298    0.000 {method 'astype' of 'numpy.generic' objects}
+   777240    0.281    0.000    0.449    0.000 D:\git\performance-rrt\.venv\Lib\site-packages\numpy\linalg\_linalg.py:123(_makearray)
+  3223710    0.266    0.000    0.266    0.000 {built-in method builtins.issubclass}
+  1165894    0.246    0.000    0.388    0.000 D:\git\performance-rrt\.venv\Lib\site-packages\numpy\linalg\_linalg.py:142(_realType)
+   388620    0.190    0.000    0.380    0.000 D:\git\performance-rrt\.venv\Lib\site-packages\numpy\_core\_ufunc_config.py:440(__enter__)
+   777274    0.189    0.000    0.189    0.000 D:\git\performance-rrt\.venv\Lib\site-packages\numpy\linalg\_linalg.py:198(_assert_stacked_square)
+   444414    0.173    0.000    9.093    0.000 D:\git\performance-rrt\core\python_impl\rrt_star_numpy_opt.py:87(<genexpr>)
+   777274    0.160    0.000    0.160    0.000 D:\git\performance-rrt\.venv\Lib\site-packages\numpy\linalg\_linalg.py:192(_assert_stacked_2d)
+  1165948    0.142    0.000    0.142    0.000 {method 'get' of 'dict' objects}
+  1223218    0.130    0.000    0.130    0.000 {built-in method numpy.asarray}
+    57324    0.130    0.000    0.237    0.000 D:\git\performance-rrt\.venv\Lib\site-packages\numpy\linalg\_linalg.py:2575(norm)
+   388621    0.120    0.000    0.120    0.000 {built-in method numpy._core._multiarray_umath._make_extobj}
+   388620    0.107    0.000    0.197    0.000 D:\git\performance-rrt\.venv\Lib\site-packages\numpy\_core\_ufunc_config.py:456(__exit__)
+   388620    0.097    0.000    0.097    0.000 {method 'astype' of 'numpy.ndarray' objects}
+   388621    0.090    0.000    0.090    0.000 {method 'reset' of '_contextvars.ContextVar' objects}
+   778782    0.090    0.000    0.090    0.000 {built-in method builtins.getattr}
+    55896    0.082    0.000    0.318    0.000 D:\git\performance-rrt\core\python_impl\rrt_star_numpy_opt.py:22(distance)
+    55760    0.075    0.000    9.167    0.000 {built-in method builtins.all}
+   388621    0.070    0.000    0.070    0.000 {method 'set' of '_contextvars.ContextVar' objects}
+    57324    0.060    0.000    0.060    0.000 {method 'dot' of 'numpy.ndarray' objects}
+   388620    0.060    0.000    0.060    0.000 {method '__array_wrap__' of 'numpy.ndarray' objects}
+   388621    0.055    0.000    0.055    0.000 D:\git\performance-rrt\.venv\Lib\site-packages\numpy\_core\_ufunc_config.py:430(__init__)
+   388654    0.053    0.000    0.053    0.000 {built-in method builtins.abs}
+        1    0.049    0.049    9.734    9.734 D:\git\performance-rrt\core\python_impl\rrt_star_numpy_opt.py:182(rrt)
+   388654    0.041    0.000    0.041    0.000 D:\git\performance-rrt\.venv\Lib\site-packages\numpy\linalg\_linalg.py:492(_unary_dispatcher)
+   388620    0.041    0.000    0.041    0.000 D:\git\performance-rrt\.venv\Lib\site-packages\numpy\linalg\_linalg.py:316(_solve_dispatcher)
+    55760    0.035    0.000    9.203    0.000 D:\git\performance-rrt\core\python_impl\rrt_star_numpy_opt.py:85(intersects_obstacle)
+     2683    0.023    0.000    0.023    0.000 {method 'reduce' of 'numpy.ufunc' objects}
+     1255    0.021    0.000    0.036    0.000 D:\git\performance-rrt\core\python_impl\rrt_star_numpy_opt.py:163(in_neighborhood)
+    57324    0.019    0.000    0.019    0.000 {method 'ravel' of 'numpy.ndarray' objects}
+     1428    0.016    0.000    0.041    0.000 D:\git\performance-rrt\core\python_impl\rrt_star_numpy_opt.py:138(nearest)
+     1259    0.016    0.000    4.787    0.004 {built-in method builtins.min}
+    27783    0.014    0.000    4.605    0.000 D:\git\performance-rrt\core\python_impl\rrt_star_numpy_opt.py:223(<lambda>)
+    26857    0.010    0.000    0.165    0.000 D:\git\performance-rrt\core\python_impl\rrt_star_numpy_opt.py:226(<lambda>)
+       10    0.009    0.001    0.009    0.001 {built-in method _imp.create_dynamic}
+    57324    0.006    0.000    0.006    0.000 D:\git\performance-rrt\.venv\Lib\site-packages\numpy\linalg\_linalg.py:2571(_norm_dispatcher)
+     2683    0.005    0.000    0.029    0.000 D:\git\performance-rrt\.venv\Lib\site-packages\numpy\_core\fromnumeric.py:69(_wrapreduction)
+      910    0.004    0.000    0.007    0.000 D:\git\performance-rrt\core\python_impl\rrt_star_numpy_opt.py:173(path_to_root)
+10438/1648    0.004    0.000    0.004    0.000 D:\git\performance-rrt\core\python_impl\rrt_star_numpy_opt.py:102(change_cost)
+     2683    0.004    0.000    0.034    0.000 D:\git\performance-rrt\.venv\Lib\site-packages\numpy\_core\fromnumeric.py:2338(sum)
+     1428    0.003    0.000    0.009    0.000 D:\git\performance-rrt\core\python_impl\rrt_star_numpy_opt.py:68(steer)
+    22683    0.003    0.000    0.003    0.000 {method 'append' of 'list' objects}
+       53    0.003    0.000    0.003    0.000 {built-in method nt.stat}
+     10/6    0.003    0.000    0.012    0.002 {built-in method _imp.exec_dynamic}
+     1444    0.002    0.000    0.002    0.000 {built-in method numpy.array}
+     1256    0.002    0.000    0.002    0.000 D:\git\performance-rrt\core\python_impl\rrt_star_numpy_opt.py:147(add_node)
+     1428    0.002    0.000    0.002    0.000 {method 'argmin' of 'numpy.ndarray' objects}
+     1428    0.002    0.000    0.005    0.000 D:\git\performance-rrt\.venv\Lib\site-packages\numpy\_core\fromnumeric.py:1349(argmin)
+        5    0.001    0.000    0.001    0.000 {built-in method _io.open_code}
+     1428    0.001    0.000    0.003    0.000 D:\git\performance-rrt\.venv\Lib\site-packages\numpy\_core\fromnumeric.py:51(_wrapfunc)
+     44/2    0.001    0.000    0.020    0.010 <frozen importlib._bootstrap>:480(_call_with_frames_removed)
+     2758    0.001    0.000    0.001    0.000 {built-in method builtins.isinstance}
+     2684    0.001    0.000    0.001    0.000 {method 'items' of 'dict' objects}
+     1669    0.001    0.000    0.001    0.000 {method 'remove' of 'list' objects}
+      107    0.000    0.000    0.001    0.000 <frozen importlib._bootstrap_external>:96(_path_join)
+     2683    0.000    0.000    0.000    0.000 D:\git\performance-rrt\.venv\Lib\site-packages\numpy\_core\fromnumeric.py:2333(_sum_dispatcher)
+        5    0.000    0.000    0.000    0.000 {method 'read' of '_io.BufferedReader' objects}
+     1257    0.000    0.000    0.000    0.000 D:\git\performance-rrt\core\python_impl\rrt_star_numpy_opt.py:96(__init__)
+1244/1242    0.000    0.000    0.000    0.000 {built-in method builtins.len}
+       29    0.000    0.000    0.004    0.000 <frozen importlib._bootstrap_external>:1597(find_spec)
+     1255    0.000    0.000    0.000    0.000 D:\git\performance-rrt\.venv\Lib\site-packages\numpy\_core\multiarray.py:383(where)
+     1428    0.000    0.000    0.000    0.000 D:\git\performance-rrt\.venv\Lib\site-packages\numpy\_core\fromnumeric.py:1345(_argmin_dispatcher)
+        5    0.000    0.000    0.000    0.000 {built-in method marshal.loads}
+     1428    0.000    0.000    0.000    0.000 D:\git\performance-rrt\core\logger.py:68(set_time_sequence)
+      910    0.000    0.000    0.000    0.000 D:\git\performance-rrt\core\logger.py:65(log_path)
+     1255    0.000    0.000    0.000    0.000 D:\git\performance-rrt\core\logger.py:62(log_rewiring)
+     1428    0.000    0.000    0.000    0.000 D:\git\performance-rrt\core\logger.py:59(log_tree)
+     17/1    0.000    0.000    0.021    0.021 <frozen importlib._bootstrap>:1349(_find_and_load)
+       17    0.000    0.000    0.004    0.000 <frozen importlib._bootstrap>:1240(_find_spec)
+        1    0.000    0.000    0.000    0.000 {built-in method nt.listdir}
+       21    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:304(acquire)
+        1    0.000    0.000    0.000    0.000 D:\git\performance-rrt\.venv\Lib\site-packages\numpy\_core\_ufunc_config.py:464(inner)
+        5    0.000    0.000    0.000    0.000 {method '__exit__' of '_io._IOBase' objects}
+      382    0.000    0.000    0.000    0.000 {method 'endswith' of 'str' objects}
+        5    0.000    0.000    0.000    0.000 <frozen abc>:110(register)
+        1    0.000    0.000    0.000    0.000 {built-in method builtins.eval}
+     17/1    0.000    0.000    0.021    0.021 <frozen importlib._bootstrap>:1304(_find_and_load_unlocked)
+      248    0.000    0.000    0.000    0.000 {method 'startswith' of 'str' objects}
+       21    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:426(_get_module_lock)
+        1    0.000    0.000    0.004    0.004 C:\Users\jungh\AppData\Roaming\uv\python\cpython-3.12.8-windows-x86_64-none\Lib\hmac.py:1(<module>)
+      331    0.000    0.000    0.000    0.000 {method 'rstrip' of 'str' objects}
+       21    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:372(release)
+        5    0.000    0.000    0.002    0.000 <frozen importlib._bootstrap_external>:1066(get_code)
+        1    0.000    0.000    0.000    0.000 C:\Users\jungh\AppData\Roaming\uv\python\cpython-3.12.8-windows-x86_64-none\Lib\collections\__init__.py:355(namedtuple)
+       16    0.000    0.000    0.004    0.000 <frozen importlib._bootstrap_external>:1495(_get_spec)
+     16/1    0.000    0.000    0.020    0.020 <frozen importlib._bootstrap>:911(_load_unlocked)
+       17    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:232(__init__)
+       21    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:124(setdefault)
+       16    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:733(_init_module_attrs)
+     17/6    0.000    0.000    0.000    0.000 {built-in method _abc._abc_subclasscheck}
+       15    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:806(spec_from_file_location)
+        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:1648(_fill_cache)
+       10    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:486(cache_from_source)
+      139    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:491(_verbose_message)
+       16    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:172(_path_isabs)
+       53    0.000    0.000    0.003    0.000 <frozen importlib._bootstrap_external>:140(_path_stat)
+      119    0.000    0.000    0.000    0.000 {method 'join' of 'str' objects}
+        1    0.000    0.000    0.020    0.020 D:\git\performance-rrt\.venv\Lib\site-packages\numpy\random\__init__.py:1(<module>)
+       23    0.000    0.000    0.000    0.000 {built-in method __new__ of type object at 0x00007FFC61BE88F0}
+       93    0.000    0.000    0.000    0.000 {method 'rpartition' of 'str' objects}
+       15    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:1592(_get_spec)
+       16    0.000    0.000    0.009    0.001 <frozen importlib._bootstrap>:806(module_from_spec)
+       10    0.000    0.000    0.000    0.000 {built-in method builtins.max}
+       14    0.000    0.000    0.000    0.000 C:\Users\jungh\AppData\Roaming\uv\python\cpython-3.12.8-windows-x86_64-none\Lib\hashlib.py:126(__get_openssl_constructor)
+        1    0.000    0.000    0.019    0.019 D:\git\performance-rrt\.venv\Lib\site-packages\numpy\random\_pickle.py:1(<module>)
+        5    0.000    0.000    0.002    0.000 <frozen importlib._bootstrap_external>:1187(get_data)
+       21    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:162(__enter__)
+        1    0.000    0.000    0.000    0.000 {built-in method _hashlib.openssl_md5}
+        1    0.000    0.000    0.000    0.000 C:\Users\jungh\AppData\Roaming\uv\python\cpython-3.12.8-windows-x86_64-none\Lib\re\_parser.py:452(_parse_sub)
+        1    0.000    0.000    0.000    0.000 {built-in method _imp.exec_builtin}
+       21    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:74(__new__)
+        1    0.000    0.000    0.000    0.000 C:\Users\jungh\AppData\Roaming\uv\python\cpython-3.12.8-windows-x86_64-none\Lib\hashlib.py:1(<module>)
+       36    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:645(parent)
+        1    0.000    0.000    0.000    0.000 C:\Users\jungh\AppData\Roaming\uv\python\cpython-3.12.8-windows-x86_64-none\Lib\re\_parser.py:512(_parse)
+        1    0.000    0.000    9.734    9.734 D:\git\performance-rrt\analysis_cprofile.py:22(run_profile)
+       21    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:79(__init__)
+       17    0.000    0.000    0.000    0.000 {built-in method _imp.is_builtin}
+       15    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:615(_get_cached)
+      257    0.000    0.000    0.000    0.000 C:\Users\jungh\AppData\Roaming\uv\python\cpython-3.12.8-windows-x86_64-none\Lib\hmac.py:19(<genexpr>)
+      257    0.000    0.000    0.000    0.000 C:\Users\jungh\AppData\Roaming\uv\python\cpython-3.12.8-windows-x86_64-none\Lib\hmac.py:20(<genexpr>)
+       16    0.000    0.000    0.000    0.000 {built-in method nt._path_splitroot}
+       17    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:416(__enter__)
+       18    0.000    0.000    0.001    0.000 <frozen importlib._bootstrap_external>:150(_path_is_mode_type)
+       17    0.000    0.000    0.000    0.000 {built-in method _thread.allocate_lock}
+      2/1    0.000    0.000    0.000    0.000 C:\Users\jungh\AppData\Roaming\uv\python\cpython-3.12.8-windows-x86_64-none\Lib\re\_compiler.py:37(_compile)
+       29    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:67(_relax_case)
+        1    0.000    0.000    0.000    0.000 C:\Users\jungh\AppData\Roaming\uv\python\cpython-3.12.8-windows-x86_64-none\Lib\re\_compiler.py:578(_code)
+       67    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:1226(__exit__)
+        1    0.000    0.000    0.000    0.000 {built-in method builtins.__build_class__}
+      105    0.000    0.000    0.000    0.000 {built-in method _imp.acquire_lock}
+      5/1    0.000    0.000    0.020    0.020 <frozen importlib._bootstrap_external>:993(exec_module)
+       17    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:445(cb)
+       10    0.000    0.000    0.009    0.001 <frozen importlib._bootstrap_external>:1291(create_module)
+      5/1    0.000    0.000    0.020    0.020 {built-in method builtins.exec}
+       21    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:82(remove)
+       67    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:1222(__enter__)
+      105    0.000    0.000    0.000    0.000 {built-in method _imp.release_lock}
+       35    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:1473(_path_importer_cache)
+     10/6    0.000    0.000    0.012    0.002 <frozen importlib._bootstrap_external>:1299(exec_module)
+       10    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:132(_path_split)
+       17    0.000    0.000    0.001    0.000 <frozen importlib._bootstrap_external>:159(_path_isfile)
+        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
+       16    0.000    0.000    0.004    0.000 <frozen importlib._bootstrap_external>:1524(find_spec)
+        1    0.000    0.000    0.000    0.000 C:\Users\jungh\AppData\Roaming\uv\python\cpython-3.12.8-windows-x86_64-none\Lib\re\_compiler.py:745(compile)
+        1    0.000    0.000    0.000    0.000 D:\git\performance-rrt\core\python_impl\rrt_star_numpy_opt.py:116(__init__)
+        1    0.000    0.000    0.000    0.000 C:\Users\jungh\AppData\Roaming\uv\python\cpython-3.12.8-windows-x86_64-none\Lib\re\_compiler.py:516(_compile_info)
+        4    0.000    0.000    0.000    0.000 D:\git\performance-rrt\.venv\Lib\site-packages\numpy\_core\getlimits.py:697(__init__)
+        1    0.000    0.000    0.000    0.000 C:\Users\jungh\AppData\Roaming\uv\python\cpython-3.12.8-windows-x86_64-none\Lib\re\_parser.py:969(parse)
+       37    0.000    0.000    0.000    0.000 {built-in method builtins.hasattr}
+       74    0.000    0.000    0.000    0.000 {method 'lower' of 'str' objects}
+        1    0.000    0.000    0.000    0.000 C:\Users\jungh\AppData\Roaming\uv\python\cpython-3.12.8-windows-x86_64-none\Lib\re\__init__.py:280(_compile)
+       42    0.000    0.000    0.000    0.000 {method '__exit__' of '_thread.RLock' objects}
+       15    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:84(_unpack_uint32)
+       16    0.000    0.000    0.000    0.000 {built-in method builtins.setattr}
+        1    0.000    0.000    0.000    0.000 {built-in method _hashlib.openssl_sha3_224}
+       20    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:632(cached)
+        5    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:670(_classify_pyc)
+        1    0.000    0.000    0.005    0.005 C:\Users\jungh\AppData\Roaming\uv\python\cpython-3.12.8-windows-x86_64-none\Lib\secrets.py:1(<module>)
+       39    0.000    0.000    0.000    0.000 {method 'partition' of 'str' objects}
+       16    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:1128(find_spec)
+       45    0.000    0.000    0.000    0.000 {method 'add' of 'set' objects}
+        5    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:755(_compile_bytecode)
+        1    0.000    0.000    0.000    0.000 D:\git\performance-rrt\core\python_impl\rrt_star_numpy_opt.py:80(__init__)
+       17    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:420(__exit__)
+       30    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:134(<genexpr>)
+        1    0.000    0.000    0.000    0.000 {built-in method _hashlib.openssl_sha1}
+       32    0.000    0.000    0.000    0.000 {method 'pop' of 'list' objects}
+       17    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:982(find_spec)
+       42    0.000    0.000    0.000    0.000 {built-in method _thread.get_ident}
+        2    0.000    0.000    0.000    0.000 C:\Users\jungh\AppData\Roaming\uv\python\cpython-3.12.8-windows-x86_64-none\Lib\enum.py:1556(__and__)
+       21    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:173(__exit__)
+       17    0.000    0.000    0.000    0.000 {method 'pop' of 'dict' objects}
+        2    0.000    0.000    0.000    0.000 {built-in method _abc._abc_init}
+       16    0.000    0.000    0.000    0.000 {built-in method _imp.find_frozen}
+        4    0.000    0.000    0.000    0.000 D:\git\performance-rrt\.venv\Lib\site-packages\numpy\_core\getlimits.py:721(max)
+        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:1460(_path_hooks)
+        1    0.000    0.000    0.000    0.000 C:\Users\jungh\AppData\Roaming\uv\python\cpython-3.12.8-windows-x86_64-none\Lib\functools.py:35(update_wrapper)
+       21    0.000    0.000    0.000    0.000 {built-in method _weakref._remove_dead_weakref}
+       16    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:185(_path_abspath)
+       20    0.000    0.000    0.000    0.000 {method 'rfind' of 'str' objects}
+        1    0.000    0.000    0.000    0.000 C:\Users\jungh\AppData\Roaming\uv\python\cpython-3.12.8-windows-x86_64-none\Lib\re\_compiler.py:243(_optimize_charset)
+        5    0.000    0.000    0.000    0.000 {built-in method _abc._abc_register}
+       17    0.000    0.000    0.000    0.000 D:\git\performance-rrt\.venv\Lib\site-packages\_virtualenv.py:50(find_spec)
+       17    0.000    0.000    0.000    0.000 {method 'replace' of 'str' objects}
+       17    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:599(__init__)
+        5    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:647(_check_name_wrapper)
+        5    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:703(_validate_timestamp_pyc)
+        4    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:463(_lock_unlock_module)
+        1    0.000    0.000    0.021    0.021 D:\git\performance-rrt\.venv\Lib\site-packages\numpy\__init__.py:339(__getattr__)
+        5    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:1206(path_stats)
+        1    0.000    0.000    0.000    0.000 {built-in method _hashlib.openssl_sha512}
+        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:501(_requires_builtin_wrapper)
+        5    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:48(_new_module)
+       25    0.000    0.000    0.000    0.000 {built-in method nt.fspath}
+        1    0.000    0.000    0.000    0.000 {built-in method _hashlib.openssl_sha224}
+        1    0.000    0.000    0.000    0.000 {built-in method _hashlib.openssl_sha256}
+        1    0.000    0.000    0.000    0.000 D:\git\performance-rrt\.venv\Lib\site-packages\numpy\_core\_ufunc_config.py:459(__call__)
+        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:1571(__init__)
+     17/6    0.000    0.000    0.000    0.000 <frozen abc>:121(__subclasscheck__)
+      4/3    0.000    0.000    0.020    0.007 <frozen importlib._bootstrap>:1390(_handle_fromlist)
+        1    0.000    0.000    0.000    0.000 <frozen zipimport>:64(__init__)
+        2    0.000    0.000    0.000    0.000 C:\Users\jungh\AppData\Roaming\uv\python\cpython-3.12.8-windows-x86_64-none\Lib\hashlib.py:82(__get_builtin_constructor)
+        8    0.000    0.000    0.000    0.000 C:\Users\jungh\AppData\Roaming\uv\python\cpython-3.12.8-windows-x86_64-none\Lib\re\_parser.py:168(__getitem__)
+        2    0.000    0.000    0.000    0.000 C:\Users\jungh\AppData\Roaming\uv\python\cpython-3.12.8-windows-x86_64-none\Lib\enum.py:720(__call__)
+        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:1689(path_hook_for_FileFinder)
+        1    0.000    0.000    0.000    0.000 {built-in method nt.urandom}
+        1    0.000    0.000    0.000    0.000 {built-in method _hashlib.openssl_sha3_512}
+        1    0.000    0.000    0.000    0.000 C:\Users\jungh\AppData\Roaming\uv\python\cpython-3.12.8-windows-x86_64-none\Lib\cProfile.py:119(__exit__)
+        1    0.000    0.000    0.000    0.000 {built-in method _hashlib.openssl_sha384}
+        1    0.000    0.000    0.000    0.000 {built-in method _hashlib.openssl_sha3_256}
+        1    0.000    0.000    0.000    0.000 {built-in method _hashlib.openssl_sha3_384}
+       16    0.000    0.000    0.000    0.000 {built-in method from_bytes}
+        1    0.000    0.000    0.000    0.000 {built-in method _hashlib.openssl_shake_128}
+      2/1    0.000    0.000    0.000    0.000 C:\Users\jungh\AppData\Roaming\uv\python\cpython-3.12.8-windows-x86_64-none\Lib\re\_parser.py:178(getwidth)
+        1    0.000    0.000    0.000    0.000 {built-in method _imp.create_builtin}
+        6    0.000    0.000    0.000    0.000 C:\Users\jungh\AppData\Roaming\uv\python\cpython-3.12.8-windows-x86_64-none\Lib\enum.py:1538(_get_value)
+        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:662(spec_from_loader)
+        1    0.000    0.000    0.000    0.000 {built-in method _hashlib.openssl_shake_256}
+        2    0.000    0.000    0.000    0.000 <frozen abc>:105(__new__)
+        1    0.000    0.000    0.000    0.000 <frozen abc>:117(__instancecheck__)
+        1    0.000    0.000    0.000    0.000 C:\Users\jungh\AppData\Roaming\uv\python\cpython-3.12.8-windows-x86_64-none\Lib\random.py:889(getrandbits)
+        1    0.000    0.000    0.000    0.000 C:\Users\jungh\AppData\Roaming\uv\python\cpython-3.12.8-windows-x86_64-none\Lib\hmac.py:27(HMAC)
+        7    0.000    0.000    0.000    0.000 C:\Users\jungh\AppData\Roaming\uv\python\cpython-3.12.8-windows-x86_64-none\Lib\re\_parser.py:240(__next)
+        3    0.000    0.000    0.000    0.000 {method 'extend' of 'list' objects}
+        1    0.000    0.000    0.000    0.000 C:\Users\jungh\AppData\Roaming\uv\python\cpython-3.12.8-windows-x86_64-none\Lib\re\__init__.py:226(compile)
+        1    0.000    0.000    0.000    0.000 C:\Users\jungh\AppData\Roaming\uv\python\cpython-3.12.8-windows-x86_64-none\Lib\re\_parser.py:231(__init__)
+       17    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:412(__init__)
+       21    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:158(__init__)
+        7    0.000    0.000    0.000    0.000 {built-in method sys.intern}
+        1    0.000    0.000    0.000    0.000 C:\Users\jungh\AppData\Roaming\uv\python\cpython-3.12.8-windows-x86_64-none\Lib\re\_compiler.py:441(_get_literal_prefix)
+        1    0.000    0.000    0.000    0.000 <frozen _collections_abc>:388(__subclasshook__)
+        1    0.000    0.000    0.000    0.000 {method 'union' of 'set' objects}
+        1    0.000    0.000    0.000    0.000 <frozen _collections_abc>:104(_check_methods)
+       12    0.000    0.000    0.000    0.000 <frozen _collections_abc>:341(__subclasshook__)
+        1    0.000    0.000    0.000    0.000 {built-in method _abc._abc_instancecheck}
+        1    0.000    0.000    0.000    0.000 C:\Users\jungh\AppData\Roaming\uv\python\cpython-3.12.8-windows-x86_64-none\Lib\re\_parser.py:449(_uniq)
+       16    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:653(has_location)
+        2    0.000    0.000    0.000    0.000 C:\Users\jungh\AppData\Roaming\uv\python\cpython-3.12.8-windows-x86_64-none\Lib\enum.py:1123(__new__)
+        7    0.000    0.000    0.000    0.000 {method '__contains__' of 'frozenset' objects}
+        1    0.000    0.000    0.000    0.000 C:\Users\jungh\AppData\Roaming\uv\python\cpython-3.12.8-windows-x86_64-none\Lib\random.py:126(__init__)
+       10    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:1280(__init__)
+        1    0.000    0.000    0.020    0.020 {built-in method builtins.__import__}
+        5    0.000    0.000    0.000    0.000 C:\Users\jungh\AppData\Roaming\uv\python\cpython-3.12.8-windows-x86_64-none\Lib\re\_parser.py:261(get)
+       14    0.000    0.000    0.000    0.000 {built-in method builtins.globals}
+        5    0.000    0.000    0.000    0.000 {built-in method _imp._fix_co_filename}
+        3    0.000    0.000    0.000    0.000 C:\Users\jungh\AppData\Roaming\uv\python\cpython-3.12.8-windows-x86_64-none\Lib\re\_parser.py:293(tell)
+        7    0.000    0.000    0.000    0.000 {method 'isidentifier' of 'str' objects}
+        3    0.000    0.000    0.000    0.000 {method 'find' of 'bytearray' objects}
+        1    0.000    0.000    0.000    0.000 C:\Users\jungh\AppData\Roaming\uv\python\cpython-3.12.8-windows-x86_64-none\Lib\re\_compiler.py:216(_compile_charset)
+        8    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:1577(<genexpr>)
+        7    0.000    0.000    0.000    0.000 C:\Users\jungh\AppData\Roaming\uv\python\cpython-3.12.8-windows-x86_64-none\Lib\collections\__init__.py:429(<genexpr>)
+        5    0.000    0.000    0.000    0.000 C:\Users\jungh\AppData\Roaming\uv\python\cpython-3.12.8-windows-x86_64-none\Lib\re\_parser.py:256(match)
+        1    0.000    0.000    0.000    0.000 {built-in method _sre.compile}
+        1    0.000    0.000    0.000    0.000 D:\git\performance-rrt\.venv\Lib\site-packages\__editable___performance_rrt_0_1_0_finder.py:15(find_spec)
+        1    0.000    0.000    0.000    0.000 C:\Users\jungh\AppData\Roaming\uv\python\cpython-3.12.8-windows-x86_64-none\Lib\functools.py:65(wraps)
+        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:989(create_module)
+        2    0.000    0.000    0.000    0.000 <frozen abc>:7(abstractmethod)
+        1    0.000    0.000    0.000    0.000 C:\Users\jungh\AppData\Roaming\uv\python\cpython-3.12.8-windows-x86_64-none\Lib\re\_parser.py:953(fix_flags)
+        4    0.000    0.000    0.000    0.000 C:\Users\jungh\AppData\Roaming\uv\python\cpython-3.12.8-windows-x86_64-none\Lib\re\_parser.py:164(__len__)
+        1    0.000    0.000    0.000    0.000 {built-in method fromkeys}
+        2    0.000    0.000    0.000    0.000 C:\Users\jungh\AppData\Roaming\uv\python\cpython-3.12.8-windows-x86_64-none\Lib\re\_compiler.py:575(isstring)
+        5    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:1182(get_filename)
+        1    0.000    0.000    0.000    0.000 C:\Users\jungh\AppData\Roaming\uv\python\cpython-3.12.8-windows-x86_64-none\Lib\re\_compiler.py:403(_simple)
+        1    0.000    0.000    0.000    0.000 C:\Users\jungh\AppData\Roaming\uv\python\cpython-3.12.8-windows-x86_64-none\Lib\re\_compiler.py:472(_get_charset_prefix)
+        5    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:1157(__init__)
+        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:164(_path_isdir)
+        2    0.000    0.000    0.000    0.000 C:\Users\jungh\AppData\Roaming\uv\python\cpython-3.12.8-windows-x86_64-none\Lib\re\_parser.py:83(groups)
+        1    0.000    0.000    0.000    0.000 D:\git\performance-rrt\.venv\Lib\site-packages\numpy\_pytesttester.py:75(__init__)
+        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:997(exec_module)
+        1    0.000    0.000    0.000    0.000 D:\git\performance-rrt\.venv\Lib\site-packages\__editable___performance_rrt_0_1_0_finder.py:61(find_spec)
+        2    0.000    0.000    0.000    0.000 C:\Users\jungh\AppData\Roaming\uv\python\cpython-3.12.8-windows-x86_64-none\Lib\re\_parser.py:113(__init__)
+        5    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:990(create_module)
+        1    0.000    0.000    0.000    0.000 {method 'update' of 'dict' objects}
+        2    0.000    0.000    0.000    0.000 {built-in method builtins.ord}
+        1    0.000    0.000    0.000    0.000 C:\Users\jungh\AppData\Roaming\uv\python\cpython-3.12.8-windows-x86_64-none\Lib\re\_parser.py:77(__init__)
+        2    0.000    0.000    0.000    0.000 C:\Users\jungh\AppData\Roaming\uv\python\cpython-3.12.8-windows-x86_64-none\Lib\re\_compiler.py:433(_get_iscased)
+        1    0.000    0.000    0.000    0.000 C:\Users\jungh\AppData\Roaming\uv\python\cpython-3.12.8-windows-x86_64-none\Lib\re\_parser.py:176(append)
+        1    0.000    0.000    0.000    0.000 {built-in method sys._getframemodulename}
+        1    0.000    0.000    0.000    0.000 <string>:1(<module>)
+        1    0.000    0.000    0.000    0.000 C:\Users\jungh\AppData\Roaming\uv\python\cpython-3.12.8-windows-x86_64-none\Lib\re\_parser.py:172(__setitem__)
+        1    0.000    0.000    0.000    0.000 C:\Users\jungh\AppData\Roaming\uv\python\cpython-3.12.8-windows-x86_64-none\Lib\random.py:903(seed)
+        1    0.000    0.000    0.000    0.000 D:\git\performance-rrt\.venv\Lib\site-packages\numpy\_core\multiarray.py:180(concatenate)
+        1    0.000    0.000    0.000    0.000 D:\git\performance-rrt\core\logger.py:56(log_obstacles)
+        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:1014(is_package)
+
+

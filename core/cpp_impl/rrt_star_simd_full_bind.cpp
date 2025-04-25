@@ -61,8 +61,9 @@ bool segments_intersect_simd(const Point2DSimd &start0, const Point2DSimd &end0,
 
     // Calculate determinant using SIMD
     __m128d dir0_perm = _mm_permute_pd(dir0, 1);
-    __m128d det_vec = _mm_mul_pd(dir0, dir1);
-    det_vec = _mm_hsub_pd(det_vec, det_vec);
+    __m128d dir1_perm = _mm_permute_pd(dir1, 1);
+    __m128d det_vec = _mm_mul_pd(dir0, dir1_perm);
+    det_vec = _mm_hsub_pd(det_vec, _mm_mul_pd(dir0_perm, dir1));
     double det = _mm_cvtsd_f64(det_vec);
 
     if (std::abs(det) <= 0.00001)
@@ -72,17 +73,16 @@ bool segments_intersect_simd(const Point2DSimd &start0, const Point2DSimd &end0,
 
     // Calculate relative position
     __m128d rel_pos = _mm_sub_pd(start1.vec, start0.vec);
-
-    // Calculate s and t using SIMD
     __m128d rel_pos_perm = _mm_permute_pd(rel_pos, 1);
-    __m128d dir1_perm = _mm_permute_pd(dir1, 1);
 
+    // Calculate s using SIMD
     __m128d s_num = _mm_mul_pd(rel_pos, dir1_perm);
-    s_num = _mm_hsub_pd(s_num, s_num);
+    s_num = _mm_hsub_pd(s_num, _mm_mul_pd(rel_pos_perm, dir1));
     double s = _mm_cvtsd_f64(s_num) / det;
 
-    __m128d t_num = _mm_mul_pd(rel_pos_perm, dir0);
-    t_num = _mm_hsub_pd(t_num, t_num);
+    // Calculate t using SIMD
+    __m128d t_num = _mm_mul_pd(rel_pos, dir0_perm);
+    t_num = _mm_hsub_pd(t_num, _mm_mul_pd(rel_pos_perm, dir0));
     double t = _mm_cvtsd_f64(t_num) / det;
 
     return (0 <= s && s <= 1) && (0 <= t && t <= 1);

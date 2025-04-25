@@ -3,7 +3,9 @@
 from line_profiler import LineProfiler
 from core.utils import Params, SAMPLE_OBSTACLES
 from core.logger import NullLogger
+
 from core.python_impl.rrt_star_pure import rrt as rrt_pure_python
+from core.python_impl.rrt_star_numpy_opt import rrt as rrt_numpy_opt
 
 
 params = Params(
@@ -26,10 +28,12 @@ if __name__ == "__main__":
 
     # Add the function to profile
     profiler.add_function(rrt_pure_python)
+    # profiler.add_function(rrt_numpy_opt)
 
     # Run profiling
     profiler.runctx(
         'run_profile(rrt_pure_python, "rrt_pure_python", params)',
+        # 'run_profile(rrt_numpy_opt, "rrt_numpy_opt", params)',
         globals(),
         locals()
     )

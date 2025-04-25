@@ -6,6 +6,8 @@ from core.utils import Params, SAMPLE_OBSTACLES
 from core.logger import NullLogger
 
 from core.python_impl.rrt_star_pure import rrt as rrt_pure_python
+from core.python_impl.rrt_star_numpy_opt import rrt as rrt_numpy_opt
+
 
 params = Params(
     max_iterations=5000,
@@ -26,6 +28,7 @@ if __name__ == "__main__":
     # Run profiling
     with cProfile.Profile() as pr:
         run_profile(rrt_pure_python, "rrt_pure_python", params)
+        # run_profile(rrt_numpy_opt, "rrt_numpy_opt", params)
 
     stats = pstats.Stats(pr)
     stats.sort_stats(pstats.SortKey.TIME)

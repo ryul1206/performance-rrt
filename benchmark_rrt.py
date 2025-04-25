@@ -127,6 +127,7 @@ def plot_results(results: Dict[str, List[float]], scenario_name: str) -> None:
     plt.boxplot([np.array(times)/scale_factor for times in results.values()], tick_labels=results.keys())
     plt.title(f"RRT* Implementation Performance Comparison - {scenario_name}")
     plt.ylabel(f"Execution Time ({unit})")
+    plt.xticks(rotation=15)  # Rotate x-axis labels by 15 degrees
     plt.savefig(f"reports/benchmark_boxplot_{_sname}.png")
     plt.close()
 
@@ -160,15 +161,15 @@ def main():
         # "NumPy": run_benchmark(rrt_numpy, "NumPy", NUM_RUNS, params),  # VERY SLOW
         # "NumPy Optimized": run_benchmark(rrt_numpy_opt, "NumPy Optimized", NUM_RUNS, params),  # SLOW
         "Numba": run_benchmark(rrt_numba, "Numba", NUM_RUNS, params),
-        # "Numba (Numpy)": run_benchmark(rrt_numba_np, "Numba (Numpy)", NUM_RUNS, params),
-        # "Numba (Numpy Optimized)": run_benchmark(rrt_numba_npopt, "Numba (Numpy) Optimized", NUM_RUNS, params),
+        "Numba (Numpy)": run_benchmark(rrt_numba_np, "Numba (Numpy)", NUM_RUNS, params),
+        "Numba (Numpy Optimized)": run_benchmark(rrt_numba_npopt, "Numba (Numpy) Optimized", NUM_RUNS, params),
         "C++ Bindings": run_benchmark(rrt_cpp_fn, "C++ Bindings", NUM_RUNS, params),
-        "C++ Full": run_benchmark(rrt_cpp_full, "C++ Full", NUM_RUNS, params),
         "C++ SIMD": run_benchmark(rrt_cpp_simd, "C++ SIMD", NUM_RUNS, params),
+        "C++ Full": run_benchmark(rrt_cpp_full, "C++ Full", NUM_RUNS, params),
     }
     # results = {
-    #     "C++ Full": run_benchmark(rrt_cpp_full, "C++ Full", NUM_RUNS, params),
     #     "C++ SIMD": run_benchmark(rrt_cpp_simd, "C++ SIMD", NUM_RUNS, params),
+    #     "C++ Full": run_benchmark(rrt_cpp_full, "C++ Full", NUM_RUNS, params),
     # }
 
     # Remove outliers from all results
